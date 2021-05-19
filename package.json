@@ -1,0 +1,14 @@
+{
+  "name": "criminal-profiles",
+  "version": "0.0.1",
+  "description": "Interview task for a frontend development job in PIT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
