@@ -7,7 +7,7 @@ Vi ønsker at du skal legge mest vekt på funksjon/logikk/kode og heller holde s
 ### Funksjonelle krav
 Brukerne har satt opp følgende ønsker:
 
- 1. *"Jeg vil kunne se en liste over alle tilgjengelige profilene."*
+ 1. *"Jeg vil kunne se en liste over alle de tilgjengelige profilene."*
  2. *"Når jeg klikker på en profil, vil jeg se tilgjengelig informasjon om denne profilen."*
  3. *"De som er onde skal ha annen bakgrunn enn de snille!"*
  4. *"Enkeltprofilene skal være formet som et visittkort."*
@@ -25,6 +25,8 @@ Arkitektene i PIT har kommet med følgende krav:
  Designerne har brukt den siste måneden på å jobbe frem et godt design, og har levert følgende wireframe:
 
  ![Wireframe for the Criminal Profile application](/designs.jpg "Wireframe")
+
+ Hvor siden til venstre er en enkelt liste over de tilgjengelige profilene, mens skissen til høyre er en enkel skisse av profilen til hver enkelt.
 
 
 ## Serverdok: 
