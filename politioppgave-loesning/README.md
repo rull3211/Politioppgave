@@ -1,0 +1,1 @@
+En enkel frontend embeddet i en nodeprosjekt som er fra politiet
