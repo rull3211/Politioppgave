@@ -4,8 +4,8 @@ let Visittkort = props => {
     // Visittkort opprettes med informasjon fra apiet detailer profile er jsonobjektet fra kallet
     const detailedProfile = props.detailedProfile
     // Hvis person er ond forblir bakgrunnsfargen rød ellers settes den til blaa
-    let backgroundColor = {backgroundColor : "red"}
-    if(!detailedProfile.evil) backgroundColor.backgroundColor = "rgb(7, 118, 209)"
+    let backgroundColor = {backgroundColor : "rgb(255 120 126)"}
+    if(!detailedProfile.evil) backgroundColor.backgroundColor = "rgb(76, 175, 255)"
     // assigner de forskjellige feltene sine data med hjelp av jsonobjektet, setter bakgrunnsfarge til korrekt farge med inline css og setter blide lik bilde fra apikall
     return(
         <div className = "visittkort">
