@@ -1,10 +1,8 @@
-
-import ServiceComponent from "./components/ServiceComponent"
 import './App.css';
-import ProfilesDatabase from "./components/profilesDatabase"
 import { Component } from "react";
+import ProfilesDatabase from "./components/profilesDatabase"
 import Visittkort from "./components/visittkort"
-
+import ServiceComponent from "./components/ServiceComponent"
 class App extends Component {
 
   state = {

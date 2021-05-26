@@ -1,4 +1,4 @@
-import react from "react"
+import React from "react"
 
 const ProfilesDatabase = props =>{
   //Sjekker om profiler er hentet inn dersom de er det rendres dem, bruker custom-atributt personid som identifier for on-click
@@ -10,7 +10,7 @@ const ProfilesDatabase = props =>{
                     ? <div className = "dbElementer">
                         {
                             props.profiles.map(element => {
-                                return (<div className= "dbElement" onClick = {props.clickedHandler} personid = {element.id}>{element.name}</div>)
+                                return (<div key={element.id} className= "dbElement" onClick = {props.clickedHandler} personid = {element.id}>{element.name}</div>)
                         })
                     }
                     </div>

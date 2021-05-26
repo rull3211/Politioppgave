@@ -1,4 +1,4 @@
-import react from "react"
+import React from "react"
 
 let Visittkort = props => {
     // Visittkort opprettes med informasjon fra apiet detailer profile er jsonobjektet fra kallet
