@@ -1,11 +1,14 @@
 import React from "react"
 
 let Visittkort = props => {
+
     // Visittkort opprettes med informasjon fra apiet detailer profile er jsonobjektet fra kallet
     const detailedProfile = props.detailedProfile
+
     // Hvis person er ond forblir bakgrunnsfargen rød ellers settes den til blaa
     let backgroundColor = {backgroundColor : "rgb(255 120 126)"}
     if(!detailedProfile.evil) backgroundColor.backgroundColor = "rgb(76, 175, 255)"
+    
     // assigner de forskjellige feltene sine data med hjelp av jsonobjektet, setter bakgrunnsfarge til korrekt farge med inline css og setter blide lik bilde fra apikall
     return(
         <div className = "visittkort">
@@ -16,7 +19,6 @@ let Visittkort = props => {
                 <div className = "visittkortContent">
                     <div className = "foersteRad">
                         <div style = {{backgroundImage : `url(http://localhost:9090/${detailedProfile.imageUrl})`}} className = "picture">
-
                         </div>
                         <div className = "detaljer">
                             <p>Name: {detailedProfile.name} </p>
@@ -31,8 +33,7 @@ let Visittkort = props => {
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div> 
     )
 }
 
