@@ -1,6 +1,6 @@
 .App{
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 p, div {
   margin: 0;
@@ -63,18 +63,17 @@ p, div {
 .visittkort{
   border-radius: 2.6%;
   border: 0.2rem solid;
-  position: absolute;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%,0);
-  top: 5%;
+  transform: translate(-50%, -50%);
   width: 45rem;
-  height: 30rem;
+  height: fit-content;
   z-index: 1;
 }
 
 .background{
   border-radius: 2%;
-  height: 30rem;
 }
 
 /*navbar for closebutton*/
@@ -135,8 +134,12 @@ p, div {
 /*fikser kortstørrelse når skjerm blir for liten for å vise alt med absolutte størrelser og rems*/
 @media (max-width: 1000px) {
   .visittkort{
-    top: 0;
+    position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: min-content;
+  }
+  .picture{
+    width: 8rem;
+    height: 8rem;
   }
 }
